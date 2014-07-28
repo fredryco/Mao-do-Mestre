@@ -22,7 +22,12 @@ public enum Raridade {
         }
     }
     
-    
-    
+    /**
+     *
+     * @return
+     */
+    public static Raridade getRandomRaridade() {
+          return values()[(int) (Math.random() * values().length)];
+      }
     
 }
